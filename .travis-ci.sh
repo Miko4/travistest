@@ -1,4 +1,4 @@
-sudo apt-get  install opam hg darcs git
+sudo apt-get  install opam darcs git
 opam init
 eval `opam config env`
 opam switch install 3.10.2
