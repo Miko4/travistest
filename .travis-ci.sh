@@ -4,9 +4,9 @@ echo Y|sudo apt-get  install  darcs git
 
 
 wget https://raw.github.com/ocaml/opam/master/shell/opam_installer.sh -O - | sh -s /usr/local/bin
-echo Y|opam init
+yes Y|opam init
 eval `opam config env`
-opam switch install 3.10.2
-opam install omake
+yes Y|opam switch install 3.10.2
+yes Y|opam install omake
 
 ocaml test.ml
