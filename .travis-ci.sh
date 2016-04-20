@@ -4,7 +4,7 @@ echo Y|sudo apt-get  install  darcs git
 
 
 wget https://raw.github.com/ocaml/opam/master/shell/opam_installer.sh -O - | sh -s /usr/local/bin
-opam init
+echo Y|opam init
 eval `opam config env`
 opam switch install 3.10.2
 opam install omake
