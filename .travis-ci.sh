@@ -1,3 +1,3 @@
-./.travis-install.sh
-./build.sh
-./test.sh
+bash /.travis-install.sh
+bash build.sh
+bash test.sh
