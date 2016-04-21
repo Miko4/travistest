@@ -2,6 +2,7 @@
 
 # opam from debian is too old
 
+sudo chmod 777 /usr/local/bin
 
 wget https://raw.github.com/ocaml/opam/master/shell/opam_installer.sh -O - | sh -s /usr/local/bin
 yes Y|opam init
