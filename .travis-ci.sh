@@ -1,4 +1,4 @@
-echo Y|sudo apt-get  install  darcs git
+#echo Y|sudo apt-get  install  darcs git
 
 # opam from debian is too old
 
