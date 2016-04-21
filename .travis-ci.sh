@@ -1,13 +1,15 @@
 #echo Y|sudo apt-get  install  darcs git
 
 # opam from debian is too old
+# on travis-ci. Maybe on vexor.io not?
+#sudo chmod 777 /usr/local/bin
 
-sudo chmod 777 /usr/local/bin
+#wget https://raw.github.com/ocaml/opam/master/shell/opam_installer.sh -O - | sh -s /usr/local/bin
+sudo apt-get install opam
 
-wget https://raw.github.com/ocaml/opam/master/shell/opam_installer.sh -O - | sh -s /usr/local/bin
 yes Y|opam init
 eval `opam config env`
-yes Y|opam switch install 3.10.2
-yes Y|opam install omake
+opam switch install -y 3.10.2
+opam install -y omake
 
 ocaml test.ml
